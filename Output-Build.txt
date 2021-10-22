@@ -1,0 +1,3 @@
+﻿1>------ Build started: Project: Yunus_İnan_Corona_VizeProje_a3, Configuration: Debug Any CPU ------
+1>  Yunus_İnan_Corona_VizeProje_a3 -> C:\Users\Yunus\documents\visual studio 2015\Projects\Yunus_İnan_Corona_VizeProje_a3\Yunus_İnan_Corona_VizeProje_a3\bin\Debug\Yunus_İnan_Corona_VizeProje_a3.exe
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========

@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yunus_İnan_Corona_VizeProje_a3", "Yunus_İnan_Corona_VizeProje_a3\Yunus_İnan_Corona_VizeProje_a3.csproj", "{3B2359B2-8C8A-4F47-A5E8-DBE65016A9D9}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "TaksiDurak_Otomasyon", "TaksiDurak_Otomasyon\TaksiDurak_Otomasyon.vdproj", "{7E3D780D-1FD7-4357-9C0F-7CFEEA4C5D6C}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "TaksiDurak_Otomasyon_a1", "TaksiDurak_Otomasyon_a1\TaksiDurak_Otomasyon_a1.vdproj", "{7337F168-B172-413D-BFC6-0B83BC6CB9BE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3B2359B2-8C8A-4F47-A5E8-DBE65016A9D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B2359B2-8C8A-4F47-A5E8-DBE65016A9D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B2359B2-8C8A-4F47-A5E8-DBE65016A9D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B2359B2-8C8A-4F47-A5E8-DBE65016A9D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E3D780D-1FD7-4357-9C0F-7CFEEA4C5D6C}.Debug|Any CPU.ActiveCfg = Debug
+		{7E3D780D-1FD7-4357-9C0F-7CFEEA4C5D6C}.Release|Any CPU.ActiveCfg = Release
+		{7337F168-B172-413D-BFC6-0B83BC6CB9BE}.Debug|Any CPU.ActiveCfg = Debug
+		{7337F168-B172-413D-BFC6-0B83BC6CB9BE}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

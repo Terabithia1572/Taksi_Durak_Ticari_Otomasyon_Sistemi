@@ -1,0 +1,479 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3B2359B2-8C8A-4F47-A5E8-DBE65016A9D9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Yunus_İnan_Corona_VizeProje_a3</RootNamespace>
+    <AssemblyName>Yunus_İnan_Corona_VizeProje_a3</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DLLIslemleri, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DLLIslemleri.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="VTIveDI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Yunus_İnan_Lisans_Uretici_a1\Yunus_İnan_Lisans_Uretici_a1\bin\Debug\VTIveDI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnaForm.Designer.cs">
+      <DependentUpon>AnaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Arac.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Arac.Designer.cs">
+      <DependentUpon>Arac.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ayarlar.Designer.cs" />
+    <Compile Include="Ayarlar1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Ayarlar.settings</DependentUpon>
+    </Compile>
+    <Compile Include="aracHareket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="aracHareket.Designer.cs">
+      <DependentUpon>aracHareket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Baslangic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Baslangic.designer.cs">
+      <DependentUpon>Baslangic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="arabaYarisi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="arabaYarisi.Designer.cs">
+      <DependentUpon>arabaYarisi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kullaniciGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kullaniciGiris.Designer.cs">
+      <DependentUpon>kullaniciGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LisansKontrol.cs" />
+    <Compile Include="mailGonder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mailGonder.Designer.cs">
+      <DependentUpon>mailGonder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Marka.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Marka.Designer.cs">
+      <DependentUpon>Marka.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model.Designer.cs">
+      <DependentUpon>Model.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Musteri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Musteri.Designer.cs">
+      <DependentUpon>Musteri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="musteriTur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="musteriTur.Designer.cs">
+      <DependentUpon>musteriTur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Personel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personel.Designer.cs">
+      <DependentUpon>Personel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="personelTur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="personelTur.Designer.cs">
+      <DependentUpon>personelTur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Radyo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Radyo.Designer.cs">
+      <DependentUpon>Radyo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SifremiUnuttum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SifremiUnuttum.Designer.cs">
+      <DependentUpon>SifremiUnuttum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sifreSifirla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sifreSifirla.Designer.cs">
+      <DependentUpon>sifreSifirla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="taksiDurak.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="taksiDurak.Designer.cs">
+      <DependentUpon>taksiDurak.cs</DependentUpon>
+    </Compile>
+    <Compile Include="yilanOyunu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yilanOyunu.Designer.cs">
+      <DependentUpon>yilanOyunu.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AnaForm.resx">
+      <DependentUpon>AnaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Arac.resx">
+      <DependentUpon>Arac.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="aracHareket.resx">
+      <DependentUpon>aracHareket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Baslangic.resx">
+      <DependentUpon>Baslangic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="arabaYarisi.resx">
+      <DependentUpon>arabaYarisi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kullaniciGiris.resx">
+      <DependentUpon>kullaniciGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mailGonder.resx">
+      <DependentUpon>mailGonder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Marka.resx">
+      <DependentUpon>Marka.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model.resx">
+      <DependentUpon>Model.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Musteri.resx">
+      <DependentUpon>Musteri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="musteriTur.resx">
+      <DependentUpon>musteriTur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personel.resx">
+      <DependentUpon>Personel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="personelTur.resx">
+      <DependentUpon>personelTur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Radyo.resx">
+      <DependentUpon>Radyo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SifremiUnuttum.resx">
+      <DependentUpon>SifremiUnuttum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sifreSifirla.resx">
+      <DependentUpon>sifreSifirla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="taksiDurak.resx">
+      <DependentUpon>taksiDurak.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yilanOyunu.resx">
+      <DependentUpon>yilanOyunu.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Ayarlar.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Ayarlar1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\musteriT.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\musteriTur.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\personel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\points-badges_level_ten.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\points-badges_level_ten1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\taksi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unnamed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unnamed1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ill_restore_success_checkmark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ILMUD-22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inline_audio_cancel_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kullanici.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\man-user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\man-user01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\man-user1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\marka.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\model.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Musteri.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\taksiDurak.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arac.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arachareket.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Aracb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\personelTur.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\persoenlTur.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lisans.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rotate %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\temizle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close-circular-button-of-a-cross %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dry-clean %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ekle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\güncelle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\key.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\araba1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\araba2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\araba3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\araba4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\araba5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\araba6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\araba7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\araba8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\araba9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\basla.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\explosion.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hit.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kupa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Radyo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sifremiUnuttum.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carIslem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uber.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\show.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hide.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eyes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\locked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carislem1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
